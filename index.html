@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Workout Program</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .exercise-name {
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container my-5">
+  <h2 class="text-center mb-4">Workout Program (4-Day Split)</h2>
+
+  <div class="table-responsive">
+    <table class="table table-striped table-bordered align-middle text-center">
+      <thead class="table-dark">
+        <tr>
+          <th>Muscle</th>
+          <th>Exercise</th>
+          <th>Sets</th>
+          <th>Reps</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td colspan="4" class="text-center table-secondary">Day 1: Chest + Triceps</td></tr>
+        <tr>
+          <td>Chest</td>
+          <td class="exercise-name" data-bs-toggle="modal" data-bs-target="#exerciseModal" data-image="IMGS/Bench Press.gif">Bench Press</td>
+          <td>4</td>
+          <td>6-10</td>
+        </tr>
+        <tr>
+          <td>Chest</td>
+          <td class="exercise-name" data-bs-toggle="modal" data-bs-target="#exerciseModal" data-image="IMGS/Incline Dumbbell Press.gif">Incline Dumbbell Press</td>
+          <td>3</td>
+          <td>8-12</td>
+        </tr>
+        <tr>
+          <td>Chest</td>
+          <td class="exercise-name" data-bs-toggle="modal" data-bs-target="#exerciseModal" data-image="IMGS/Chest Dips (lean forward).gif">Chest Dips (Forward Leaning)</td>
+          <td>3</td>
+          <td>10-12</td>
+        </tr>
+        <tr>
+          <td>Chest</td>
+          <td class="exercise-name" data-bs-toggle="modal" data-bs-target="#exerciseModal" data-image="IMGS/Cable Crossover.gif">Cable Crossover</td>
+          <td>3</td>
+          <td>12-15</td>
+        </tr>
+        <tr>
+          <td>Triceps</td>
+          <td class="exercise-name" data-bs-toggle="modal" data-bs-target="#exerciseModal" data-image="IMGS/Overhead Triceps Extension.gif">Overhead Triceps Extension</td>
+          <td>3</td>
+          <td>10-12</td>
+        </tr>
+        <tr>
+          <td>Triceps</td>
+          <td class="exercise-name" data-bs-toggle="modal" data-bs-target="#exerciseModal" data-image="IMGS/Rope Pushdown.gif">Rope Pushdown</td>
+          <td>3</td>
+          <td>12-15</td>
+        </tr>
+        <tr>
+          <td>Triceps</td>
+          <td class="exercise-name" data-bs-toggle="modal" data-bs-target="#exerciseModal" data-image="IMGS/Skull Crushers.gif">Skull Crushers</td>
+          <td>3</td>
+          <td>10</td>
+        </tr>
+        
+        <tr><td colspan="4" class="text-center table-secondary">Day 2: Back + Biceps</td></tr>
+        <tr>
+          <td>Back</td>
+          <td class="exercise-name" data-bs-toggle="modal" data-bs-target="#exerciseModal" data-image="IMGS/back-extension.gif">Back extension</td>
+          <td>4</td>
+          <td>5-8</td>
+        </tr>
+        <tr>
+          <td>Back</td>
+          <td class="exercise-name" data-bs-toggle="modal" data-bs-target="#exerciseModal" data-image="IMGS/pullups.gif">Pull-Ups or Lat Pulldown</td>
+          <td>4</td>
+          <td>8-12</td>
+        </tr>
+        <tr>
+          <td>Back</td>
+          <td class="exercise-name" data-bs-toggle="modal" data-bs-target="#exerciseModal" data-image="IMGS/Barbell Row.gif">Barbell Row</td>
+          <td>3</td>
+          <td>8-10</td>
+        </tr>
+        <tr>
+          <td>Back</td>
+          <td class="exercise-name" data-bs-toggle="modal" data-bs-target="#exerciseModal" data-image="IMGS/Seated Cable Row.gif">Seated Cable Row</td>
+          <td>3</td>
+          <td>10-12</td>
+        </tr>
+        <tr>
+          <td>Biceps</td>
+          <td class="exercise-name" data-bs-toggle="modal" data-bs-target="#exerciseModal" data-image="IMGS/Dumbbell Curl.gif">Dumbbell Curl</td>
+          <td>3</td>
+          <td>10-12</td>
+        </tr>
+        <tr>
+          <td>Biceps</td>
+          <td class="exercise-name" data-bs-toggle="modal" data-bs-target="#exerciseModal" data-image="IMGS/Hammer Curl.gif">Hammer Curl</td>
+          <td>3</td>
+          <td>12-15</td>
+        </tr>
+        <tr>
+          <td>Biceps</td>
+          <td class="exercise-name" data-bs-toggle="modal" data-bs-target="#exerciseModal" data-image="IMGS/Concentration Curl.gif">Concentration Curl</td>
+          <td>3</td>
+          <td>12-15</td>
+        </tr>
+        
+        <tr><td colspan="4" class="text-center table-secondary">Day 3: Legs + Calves</td></tr>
+<tr>
+  <td>Legs</td>
+  <td class="exercise-name" data-bs-toggle="modal" data-bs-target="#exerciseModal" data-image="IMGS/Squat.gif">Squat</td>
+  <td>4</td>
+  <td>6-10</td>
+</tr>
+ 
+<tr>
+  <td>Legs</td>
+  <td class="exercise-name" data-bs-toggle="modal" data-bs-target="#exerciseModal" data-image="IMGS/Bulgarian Split Squat.gif">Bulgarian Split Squat</td>
+  <td>3</td>
+  <td>10 per leg</td>
+</tr>
+<tr>
+  <td>Legs</td>
+  <td class="exercise-name" data-bs-toggle="modal" data-bs-target="#exerciseModal" data-image="IMGS/Leg Press.gif">Leg Press</td>
+  <td>3</td>
+  <td>10-12</td>
+</tr>
+<tr>
+  <td>Legs</td>
+  <td class="exercise-name" data-bs-toggle="modal" data-bs-target="#exerciseModal" data-image="IMGS/leg-curl-machine.gif">Extension</td>
+  <td>3</td>
+  <td>12-15</td>
+</tr>
+<tr>
+  <td>Calves</td>
+  <td class="exercise-name" data-bs-toggle="modal" data-bs-target="#exerciseModal" data-image="IMGS/Standing Calf Raise.gif">Standing Calf Raise</td>
+  <td>4</td>
+  <td>15-20</td>
+</tr>
+<tr>
+  <td>Calves</td>
+  <td class="exercise-name" data-bs-toggle="modal" data-bs-target="#exerciseModal" data-image="IMGS/Seated Calf Raise.gif">Seated Calf Raise</td>
+  <td>3</td>
+  <td>20</td>
+</tr>
+
+        
+        <tr><td colspan="4" class="text-center table-secondary">Day 4: Shoulders + Core</td></tr>
+        <tr>
+          <td>Shoulders</td>
+          <td class="exercise-name" data-bs-toggle="modal" data-bs-target="#exerciseModal" data-image="IMGS/Overhead Press.gif">Overhead Press</td>
+          <td>4</td>
+          <td>6-10</td>
+        </tr>
+        <tr>
+          <td>Shoulders</td>
+          <td class="exercise-name" data-bs-toggle="modal" data-bs-target="#exerciseModal" data-image="IMGS/Arnold Press.gif">Arnold Press</td>
+          <td>3</td>
+          <td>8-10</td>
+        </tr>
+        <tr>
+          <td>Shoulders</td>
+          <td class="exercise-name" data-bs-toggle="modal" data-bs-target="#exerciseModal" data-image="IMGS/Lateral Raise.gif">Lateral Raise</td>
+          <td>4</td>
+          <td>12-15</td>
+        </tr>
+        <tr>
+          <td>Shoulders</td>
+          <td class="exercise-name" data-bs-toggle="modal" data-bs-target="#exerciseModal" data-image="IMGS/Front Raise.gif">Front Raise</td>
+          <td>3</td>
+          <td>10-12</td>
+        </tr>
+        <tr>
+          <td>Shoulders</td>
+          <td class="exercise-name" data-bs-toggle="modal" data-bs-target="#exerciseModal" data-image="IMGS/Rear Delt Fly.gif">Rear Delt Fly</td>
+          <td>3</td>
+          <td>10-12</td>
+        </tr>
+        <tr>
+          <td>Shoulders</td>
+          <td class="exercise-name" data-bs-toggle="modal" data-bs-target="#exerciseModal" data-image="IMGS/Face Pull.gif">Face Pull</td>
+          <td>3</td>
+         <td>10-12</td>
+        </tr>
+    <tr><td colspan="4" class="text-center table-secondary">Day 5: Push</td></tr>
+<tr>
+  <td>Chest</td>
+  <td class="exercise-name" data-bs-toggle="modal" data-bs-target="#exerciseModal" data-image="IMGS/Bench Press.gif">Bench Press</td>
+  <td>4</td>
+  <td>6-8</td>
+</tr>
+<tr>
+  <td>Chest</td>
+  <td class="exercise-name" data-bs-toggle="modal" data-bs-target="#exerciseModal" data-image="IMGS/Incline Dumbbell Press.gif">Incline Dumbbell Press</td>
+  <td>4</td>
+  <td>8-10</td>
+</tr>
+<tr>
+  <td>Shoulders</td>
+  <td class="exercise-name" data-bs-toggle="modal" data-bs-target="#exerciseModal" data-image="IMGS/Dumbbell Shoulder Press.gif">Dumbbell Shoulder Press</td>
+  <td>4</td>
+  <td>8-10</td>
+</tr>
+<tr>
+  <td>Shoulders</td>
+  <td class="exercise-name" data-bs-toggle="modal" data-bs-target="#exerciseModal" data-image="IMGS/Lateral Raise.gif">Lateral Raise</td>
+  <td>4</td>
+  <td>12-15</td>
+</tr>
+<tr>
+  <td>Triceps</td>
+  <td class="exercise-name" data-bs-toggle="modal" data-bs-target="#exerciseModal" data-image="IMGS/Rope Pushdown.gif">Rope Pushdown</td>
+  <td>4</td>
+  <td>12-15</td>
+</tr>
+<tr>
+  <td>Triceps</td>
+  <td class="exercise-name" data-bs-toggle="modal" data-bs-target="#exerciseModal" data-image="IMGS/Overhead Triceps Extension.gif">Overhead Dumbbell Extension</td>
+  <td>4</td>
+  <td>10-12</td>
+</tr>
+<tr>
+  <td>Legs</td>
+  <td class="exercise-name" data-bs-toggle="modal" data-bs-target="#exerciseModal" data-image="IMGS/Leg Press.gif">Leg Press</td>
+  <td>4</td>
+  <td>10</td>
+</tr>
+<tr>
+  <td>Legs</td>
+  <td class="exercise-name" data-bs-toggle="modal" data-bs-target="#exerciseModal" data-image="IMGS/Walking Lunges.gif">Walking Lunges</td>
+  <td>4</td>
+  <td>10</td>
+</tr>
+<tr>
+  <td>Legs</td>
+  <td class="exercise-name" data-bs-toggle="modal" data-bs-target="#exerciseModal" data-image="IMGS/leg-curl-machine.gif">Leg Extension</td>
+  <td>4</td>
+  <td>10</td>
+</tr>
+
+<tr><td colspan="4" class="text-center table-secondary">Day 6: Pull</td></tr>
+<tr>
+  <td>Back</td>
+  <td class="exercise-name" data-bs-toggle="modal" data-bs-target="#exerciseModal" data-image="IMGS/pullups.gif">Pull-Ups</td>
+  <td>4</td>
+  <td>6-8</td>
+</tr>
+<tr>
+  <td>Back</td>
+  <td class="exercise-name" data-bs-toggle="modal" data-bs-target="#exerciseModal" data-image="IMGS/Barbell Row.gif">Barbell Row</td>
+  <td>4</td>
+  <td>6-8</td>
+</tr>
+<tr>
+  <td>Back</td>
+  <td class="exercise-name" data-bs-toggle="modal" data-bs-target="#exerciseModal" data-image="IMGS/Seated Cable Row.gif">Cable Row</td>
+  <td>4</td>
+  <td>10-12</td>
+</tr>
+<tr>
+  <td>Shoulders</td>
+  <td class="exercise-name" data-bs-toggle="modal" data-bs-target="#exerciseModal" data-image="IMGS/Face Pull.gif">Face Pull</td>
+  <td>4</td>
+  <td>12-15</td>
+</tr>
+<tr>
+  <td>Biceps</td>
+  <td class="exercise-name" data-bs-toggle="modal" data-bs-target="#exerciseModal" data-image="IMGS/Hammer Curl.gif">Hammer Curl</td>
+  <td>4</td>
+  <td>12</td>
+</tr>
+<tr>
+  <td>Biceps</td>
+  <td class="exercise-name" data-bs-toggle="modal" data-bs-target="#exerciseModal" data-image="IMGS/Barbell Curl.gif">Barbell Curl</td>
+  <td>4</td>
+  <td>10</td>
+</tr>
+<tr>
+  <td>Legs</td>
+  <td class="exercise-name" data-bs-toggle="modal" data-bs-target="#exerciseModal" data-image="IMGS/Leg Curl Machine.gif">Leg Curl Machine</td>
+  <td>4</td>
+  <td>10</td>
+</tr>
+<tr>
+  <td>Legs</td>
+  <td class="exercise-name" data-bs-toggle="modal" data-bs-target="#exerciseModal" data-image="IMGS/pull-through-booty.gif">Cable Pull-Through</td>
+  <td>3</td>
+  <td>10</td>
+</tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<!-- Exercise Modal -->
+<div class="modal fade" id="exerciseModal" tabindex="-1" aria-labelledby="exerciseModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exerciseModalLabel">Exercise Video</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <img id="exerciseImage" src="" alt="Exercise" class="img-fluid">
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+  // Set the image source for modal based on clicked exercise
+  document.querySelectorAll('.exercise-name').forEach(item => {
+    item.addEventListener('click', event => {
+      document.getElementById('exerciseImage').src = event.target.getAttribute('data-image');
+    });
+  });
+</script>
+
+</body>
+</html>
